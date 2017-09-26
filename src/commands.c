@@ -1,5 +1,4 @@
 #include <string.h>
-
 #include "commands.h"
 
 int do_cd(int argc, char** argv) {
