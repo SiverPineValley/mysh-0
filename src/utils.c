@@ -1,4 +1,4 @@
-#include "utils.h"
+//#include "utils.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -6,7 +6,8 @@ void mysh_parse_command(const char* command,
                         int *argc, char*** argv)
 {
 	int temp = 0;
-	char* stemp = strtok( command  , " " ); 
+	char* sttemp = (char*)  command;
+	char* stemp = strtok( sttemp  , " " ); 
 	
 	while (stemp != NULL) {	
 		strcpy(**(argv + temp),stemp);
